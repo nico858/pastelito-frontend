@@ -25,7 +25,7 @@ export default function Register() {
   });
 
   const handleButton = () => {
-    window.location.href = "http://localhost:3000/api/v1/auth/login/google";
+    window.location.href = "https://pastelito-backend.onrender.com/api/v1/auth/login/google";
   };
 
   return (
