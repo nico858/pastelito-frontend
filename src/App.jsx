@@ -19,17 +19,17 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/pastelito-front/" element={<HomePage />} />
-          <Route path="/pastelito-front/login" element={<Login />} />
-          <Route path="/pastelito-front/register" element={<Register />} />
-          <Route path="/pastelito-front/about" element={<h1>about</h1>} />
-          <Route path="/pastelito-front/catalogo" element={<CupCakes />} />
-          <Route path="/pastelito-front/buy" element={<Buy/>} />
-          <Route path="/pastelito-front/customCupCakes" element={<CustomCupCakes />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/about" element={<h1>about</h1>} />
+          <Route path="/catalogo" element={<CupCakes />} />
+          <Route path="/buy" element={<Buy/>} />
+          <Route path="/customCupCakes" element={<CustomCupCakes />} />
 
           <Route element={<ProtectedRoute />}>
-            <Route path="/pastelito-front/profile" element={<Profile />} />
-            <Route path="/pastelito-front/shoppingCar" element={<ShoppingCar/>} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/shoppingCar" element={<ShoppingCar/>} />
           </Route>
         </Routes>
       </BrowserRouter>
